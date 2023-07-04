@@ -75,7 +75,7 @@ app.layout = html.Div(children=[
                                 # TASK1: Add title to the dashboard
                                 # Enter your code below. Make sure you have correct formatting.
                                     html.H1('US Domestic Airline Flights Performance',
-                                        style={'text-align-last':'centre','color':'#503D36','font-size':24}
+                                        style={'text-align-last':'centre','color':'#503D36','font-size':24}),
                                 # REVIEW2: Dropdown creation
                                 # Create an outer division 
                                 html.Div([
@@ -95,7 +95,7 @@ app.layout = html.Div(children=[
                                                               {'label': 'Yearly Airline Delay Report', 'value': 'OPT2'}
                                                              ],
                                                      placeholder='Select a report type',
-                                                     style={'width':'80%', 'padding':'3px', 'font-size':'20px', 'text-align-last':'center'}
+                                                     style={'width':'80%', 'padding':'3px', 'font-size':'20px', 'text-align-last':'center'})
                                     # Place them next to each other using the division style
                                     ], style={'display':'flex'}),
                                     
@@ -164,7 +164,7 @@ def get_graph(chart, year, children1, children2, c3, c4, c5):
             
             # TASK5: Average flight time by reporting airline
             # Enter your code below. Make sure you have correct formatting.
-             line_fig = px.line(line_data, x='Month', y='AirTime', color='Reporting_Airline', title='Average monthly flight time (minutes) by airline')
+            line_fig = px.line(line_data, x='Month', y='AirTime', color='Reporting_Airline', title='Average monthly flight time (minutes) by airline')
 
             
             # Percentage of diverted airport landings per reporting airline
